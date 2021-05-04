@@ -5,7 +5,7 @@ export default function save( { attributes } ) {
 
 	const { avatar_url, name, html_url, bio, location } = attributes.profile
 
-	return <div { ...useBlockProps.save() }>
+	return <div { ...useBlockProps.save() } className="github-profile">
 		<img src={ avatar_url } alt={name} />
 		<div>
 			<h3>

@@ -5,7 +5,7 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.entry-content .wp-block-create-block-github-profile {
+.github-profile {
 	display: flex;
 	align-items: center;
 
@@ -20,7 +20,7 @@
 
 	img {
 		border-radius: 50%;
-		max-width: 25%;
+		max-width: 25% !important;
 		margin-right: 25px;
 	}
 }

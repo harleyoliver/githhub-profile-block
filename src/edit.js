@@ -1,7 +1,7 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 import { TextControl } from '@wordpress/components';
-import './editor.scss';
+import './style.scss';
 
 export default function Edit( { attributes, setAttributes } ) {
 
@@ -12,9 +12,16 @@ export default function Edit( { attributes, setAttributes } ) {
 	}
 
 	if ( attributes.profile ) {
+		const { avatar_url, name, html_url, bio, location } = attributes.profile;
+
 		return (
-			<div { ...useBlockProps() }>
-				<p>Github Profile: {attributes.profile.name}</p>
+			<div { ...useBlockProps.save() } className="github-profile">
+				<img src={ avatar_url } alt={name} />
+				<div>
+					<h3>{name}</h3>
+					<small>{location}</small>
+					<p>{bio}</p>
+				</div>
 			</div>
 		)
 	} else {
