@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/github-profile",
+	"title": "Github Profile",
+	"category": "widgets",
+	"icon": "dashicons-admin-users",
+	"description": "Example block to display a github profile link to a user.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "github-profile",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

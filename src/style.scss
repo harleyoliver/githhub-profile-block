@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.entry-content .wp-block-create-block-github-profile {
+	display: flex;
+	align-items: center;
+
+	a {
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+
+	img {
+		border-radius: 50%;
+		max-width: 25%;
+		margin-right: 25px;
+	}
+}
